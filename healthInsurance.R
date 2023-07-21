@@ -1,10 +1,14 @@
 response2 <- read.csv("~/Downloads/typeformResponses.csv")
 response1<- read.csv("~/Downloads/googleFormResponses.csv")
+write.csv("response1")
 names(response1)
 names(response2) <- names(response1)
 responses <- rbind(response2, response1)
 head(responses)
 responses <- as.data.frame(responses)
+write.csv(responses, "~/R_PROJECTS/HealthInsurance/responses.csv")
+write.csv
+
 head(responses)
 
 #check for missing values

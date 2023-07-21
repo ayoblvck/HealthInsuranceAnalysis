@@ -1,0 +1,18 @@
+---
+title: Health Insurance report
+---
+
+# Introduction
+
+There are many misconceptions about insurance, particularly in Nigeria. It is often viewed as a wasteful expense, as people prefer to rely on God or popular sayings like "Inshallah" and "Vibes" for their well-being. This perception creates challenges for insurance companies operating in this sector, as they struggle to navigate the market and maintain profitability. Although there is a market that genuinely needs insurance products, there is a lack of awareness about the benefits of insurance in Nigeria. Therefore, the purpose of this report is to address this issue. We conducted research among our friends and family to identify individuals who have not adopted insurance and explore their reasons. Through this study, we aim to provide recommendations on how to effectively promote insurance adoption in Nigeria.
+
+# Data Analysis
+## Step 1: Data Cleaning
+The result of the survey was read into a csv file
+
+```{r results = 'asis'}
+data <- read.csv("./responses.csv")
+data <- as.data.frame(data)
+print(names(data))
+print(head(data))
+```
